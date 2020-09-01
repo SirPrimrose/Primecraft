@@ -1,0 +1,141 @@
+name: PrimeCraft
+main: com.sonicjumper.primecraft.main.PrimeCraftMain
+version: 1.2.150713
+author: Sonicjumper
+softdepend: [WorldGuard, PermissionsBukkit]
+commands:
+   score:
+      description: Get the current score of the game
+      usage: /score
+      aliases: [s]
+   flag:
+      description: Get the current position of the flag
+      usage: /flag
+      aliases: [f]
+   money:
+      description: Show your current money
+      usage: /money
+      aliases: [m]
+   parkour:
+      description: Go to the Parkour world
+      usage: /parkour
+      aliases: [p]
+   vote:
+      description: Vote for a map during voting
+      usage: /vote
+      aliases: [v]
+   spawn:
+      description: Return to the player’s team’s spawn after a delay
+      usage: /spawn
+   stats:
+      description: Get the PlayerStats of a player
+      usage: /stats <player>
+   team:
+      description: Get the current team of a player
+      usage: /team
+      aliases: [t]
+   teamchat:
+      description: Toggles the player’s talk mode to only their team or public.
+      usage: /teamchat
+      aliases: [tc]
+   deathmessages:
+      description: Toggles the player’s death message status to receive all death messages or only ones about them.
+      usage: /deathmessages
+      aliases: [dm]
+   togglesounds:
+      description: Toggle’s the player’s sound mode to listen to or ignore special sound effects.
+      usage: /togglesounds
+      aliases: [ts]
+   toggleeffect:
+      description: Toggles the chosen effect for the player.
+      usage: /toggleeffect <effect>
+      aliases: [te]
+   listeffects:
+      description: Lists the available effects for the player.
+      usage: /listeffects
+      aliases: [le]
+   preferteam:
+      description: Sets a player’s preference for the next game
+      usage: /preferteam <team>
+      aliases: [pt]
+   toggleplayereffect:
+      description: Adds or removes an effect on a player.
+      usage: /toggleplayereffect <playerName> <effectName> <1|0>
+   givemoney:
+      description: Give a player an amount of money
+      usage: /givemoney <player> <amount>
+   resetloadout:
+      description: Resets a player’s loadout
+      usage: /resetloadout <player>
+   settier:
+      description: Sets a player to a certain tier
+      usage: /settier <player> <tier>
+   startgame:
+      description: Starts the game
+      usage: /startgame
+   teamlist:
+      description: Lists the player data stored in the team list
+      usage: /teamlist <team>
+   setplayerpreferteam:
+      description: Sets a player’s ability to prefer their team
+      usage: /setplayerpreferteam <player> <1|0>
+   setgamedetailsign:
+      description: Sets the game detail sign to the block the player is standing in.
+      usage: /setgamedetailsign
+   spawngate:
+      description: Gives a spawn gate tool to use
+      usage: /spawngate <gateType> <team>
+   capturepointtool:
+      description: Gives a Capture Point tool to use
+      usage: /capturepointtool <captureLevel> <capturePointID>
+   setcapturepointcount:
+      description: Sets the Capture Point number in this world
+      usage: /setcapturepointcount <capturePointCount>
+   setcapturepoint:
+      description: Sets the location of a Capture Point in this world
+      usage: /setcapturepoint <capturePointID>
+   setassaultpointcount:
+      description: Sets the Assault Point number in this world
+      usage: /setassaultpointcount <assaultPointCount>
+   setassaultpoint:
+      description: Sets the location of an Assault Point button in this world
+      usage: /setassaultpoint <assaultPointID>
+   setlobby:
+      description: Sets the game Lobby
+      usage: /setlobby
+   setparkourlevel:
+      description: Sets a parkour level
+      usage: /setparkourlevel <levelNumber> <prize>
+   setplayerparkourlevel:
+      description: Sets a player’s parkour level
+      usage: /setplayerparkourlevel <name> <level>
+   teamspawn:
+      description: Sets a Team’s spawn
+      usage: /teamspawn <team>
+   teamflag:
+      description: Sets a Team’s Flag starting position
+      usage: /teamflag <team>
+   setartifact:
+      description: Sets the Artifact’s starting position
+      usage: /setartifact
+   gotoWorld:
+      description: Go to the entered world(if available)
+      usage: /gotoWorld <world>
+   listWorlds:
+      description: Lists all playable worlds
+      usage: /listWorlds
+   addscore:
+      description: Add score to a specific team
+      usage: /addscore <team> <amount>
+   enableWorld:
+      description: Enables a new world to be played on
+      usage: /enableWorld <worldName> <desc> <author> <gamemode> <preferredtime>
+   disableWorld:
+      description: Disables a world from the play list
+      usage: /disableWorld <worldName>
+   addDoubleCoinTime:
+      description: Adds time to the double coin feature
+      usage: /addDoubleCoinTime <timeInSeconds>
+   forceSaveConfig:
+      description: Saves the config to file, so you can back it up or something
+      usage: /forceSaveConfig
